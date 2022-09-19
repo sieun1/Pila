@@ -1,0 +1,79 @@
+@font-face {
+    font-family: abster;
+    src: url();
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://cdn.mindgil.com/news/photo/202010/69959_4950_1529.jpg)
+
+}
+
+.headerArea {
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 a {
+    text-decoration: none;
+    color:black;
+
+}
+
+ ul li {
+   
+    display: inline-block;
+    margin: 0 10px;
+    border: 0.5px;
+ }
+
+ .nav a{
+    color: black;
+
+ }
+
+.nav button {
+    border-radius: 5px;
+    background: none;
+    padding: 3px 9px ;
+    border: 2px solid black;
+}
+
+
+.container .hero button{
+
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%,-50%);
+    background: none;
+    border: 2px solid darkseagreen;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+    font-weight: bolder;
+    font-size: 15px;
+
+}
+
+.container  button:hover{
+    background-color:  rgb(93, 206, 162);
+
+}
+
+
