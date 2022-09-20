@@ -3,6 +3,7 @@
     src: url();
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -26,12 +27,14 @@
 }
 
 h1 a {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    color:black;
+    color: rgba(233, 174, 87, 0.822);
 
 }
 
- ul li {
+ ul  li{
    
     display: inline-block;
     margin: 0 10px;
@@ -39,15 +42,24 @@ h1 a {
  }
 
  .nav a{
-    color: black;
+    /* width:70%;
+    height: 80px; */
+    text-decoration: none;
+    color: white;
+
+ }
+
+ .nav a:hover{
+    color:rgba(233, 174, 87, 0.822);
 
  }
 
 .nav button {
+    color:  white;
     border-radius: 5px;
     background: none;
     padding: 3px 9px ;
-    border: 2px solid black;
+    border: 2px solid  rgba(233, 174, 87, 0.822);
 }
 
 
@@ -58,8 +70,8 @@ h1 a {
     top: 75%;
     transform: translate(-50%,-50%);
     background: none;
-    border: 2px solid darkseagreen;
-    color: white;
+    border: 2px solid rgba(233, 174, 87, 0.822);
+    color:  white;
     padding: 15px 20px;
     border-radius: 20px;
     margin-top: 30px;
@@ -72,7 +84,7 @@ h1 a {
 }
 
 .container  button:hover{
-    background-color:  rgb(93, 206, 162);
+    background-color:  rgb(75, 74, 73);
 
 }
 
