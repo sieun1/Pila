@@ -61,6 +61,22 @@ h1 a {
     padding: 3px 9px ;
     border: 2px solid  rgba(233, 174, 87, 0.822);
 }
+   .container .hero{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        color:white;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+    
+.container .hero p{
+    font-size: 18px;
+    line-height: 30px;
+}
+
 
 
 .container .hero button{
@@ -74,7 +90,7 @@ h1 a {
     color:  white;
     padding: 15px 20px;
     border-radius: 20px;
-    margin-top: 30px;
+    margin-top: 90px;
     outline: none;
     cursor: pointer;
     transition: all .4s;

@@ -16,16 +16,64 @@
             box-sizing: border-box;
         }
 
+        .menu li{
+            list-style: none;
+           
+    
+        }
+        .menu a{
+            text-decoration: none;
+            font-size: 12px;
+        }
+        .menu {
+            position: relative;
+            width: 770px;
+            overflow: hidden;
+            margin: 150px auto;
+        }
+        
+        .menu > li {
+            width: 30%;
+            float: left;
+            text-align: center;
+            line-height: 40px;
+            background-color: rgb(230, 198, 150);
+        }
+
+        .menu a {
+            /* color: rgb(150, 80, 80); */
+        }
+
+        .submenu > li {
+            line-height: 40px;
+            background-color: rgb(240, 204, 170);
+        }
+
+        .submenu {
+            position: relative;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .menu > li:hover {
+            background-color: rgb(255, 255, 255);
+            transition-duration: 0.5s;
+        }
+        .menu > li:hover .submenu{
+            height: 200px;
+            transition-duration: 0.7s;
+        }
+
         .container {
             width: 100%;
-            height: 100vh;
+
 
         }
 
         .headerArea {
             display: flex;
             width: 70%;
-            height: 80px;
+            height: 85px;
             margin: 0 auto;
             justify-content: space-between;
             align-items: center;
@@ -44,19 +92,19 @@
 
         ul li {
 
-            display: inline-block;
+            /* display: inline-block;
             margin: 0 20px;
-            border: 0.5px;
+            border: 0.5px; */s
         }
 
         .nav a {
 
-            text-decoration: none;
-            color: black
+            /* text-decoration: none;
+            color: black */
         }
 
         .nav a:hover {
-            color: rgba(233, 174, 87, 0.822);
+            /* color: rgba(233, 174, 87, 0.822); */
 
         }
 
@@ -64,7 +112,7 @@
             color: black;
             border-radius: 5px;
             background: none;
-            padding: 3px 9px;
+            padding: 3px 11px;
             border: 2px solid rgba(233, 174, 87, 0.822);
         }
 
@@ -117,38 +165,24 @@
             text-align: center;
         }
 
-        .card-item1  {
+        .card-item1 {
 
             display: flex;
             width: 340px;
             height: 400px;
-            margin: auto;
-           
+            margin: 10px 100px 10px 265px;
             border-radius: 5px;
-            
             text-align: center;
+
         }
 
-        .card-item1 li{
-            /* display: inline-block;
-            margin: 0 10px; */
-        }
-        
         .card-item1 h5 {
             margin: auto;
             width: 300px;
             height: 50px;
         }
-
-        .card-item2 {
-            /* width: 360px;
-            height: 400px;
-            margin: auto;
-           background-color: aquamarine;
-           text-align: center; */
-        }
     </style>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+
 </head>
 
 <body>
@@ -158,20 +192,49 @@
             <div class="headerArea">
                 <h1><a href='#' onclick="location.href='PilaMain.html'">Pilatas</a></h1>
 
-                <div class="nav">
-                    <ul>
+                
+                    <ul class="menu">
+                        <li>
+                            <a href="#">수강신청 및 이용안내</a>
+                            <ul class="submenu">
+                                <li><a href="#">강좌 스케줄</a></li>
+                                <li><a href="#">수강신청 변경 및 취소 안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">커뮤니티</a>
+                            <ul class="submenu">
+                                <li><a href="#">공지사항/이벤트</a></li>
+                                <li><a href="#">수강후기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">My 문화센터</a>
+                            <ul class="submenu">
+                                <li><a href="#">회원정보변경</a></li>
+                                <li><a href="#">수강내역 조회</a></li>
+                                
+                            </ul>
+                           
+                        </li>
+                    </ul>
+                    <div class="nav">
+                    <button onclick="location.href='loginpage.html'">로그인</button>
+                </div>
+                    <!-- <ul>
                         <li><a href="#">수강신청 및 이용안내</a></li>
+                        
                         <li><a href="#">커뮤니티</a></li>
                         <li><a href="#">My Page</a></li>
-                        <li><button>로그인</button></li>
+                        <li><button onclick="location.href='loginpage.html'">로그인</button></li>
 
-                    </ul>
-                </div>
+                    </ul> -->
+                
             </div>
 
             <hr /><br />
 
-            <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+
             <div class="section">
                 <div class="imgSec">
                     <img src="https://health.chosun.com/site/data/img_dir/2021/11/18/2021111801788_0.jpg" style="width: 610px; height: 460px;  
@@ -201,43 +264,94 @@
                     <br /> <br /> <br />
                     <p></p>강좌소개</p>
                 </div>
-                <div class="card-group">
+                <div class="card-group" style="display:flex; margin-bottom: 35px; ">
                     <ul class="card-item1">
                         <li>
                             <img src="https://www.firstyp.co.kr/images/imgs/main-program-thumb00.jpg"
                                 style="margin:auto">
                             <div class="info">
-                                <h6 class="card-text1">Matt Pilates & Smaall Tools</h6>
-                                <h4 class="card-title">매트 필라테스 & 소도구 </h4>
-                                <h5 class="parag">인체기능 해부학 지식을 바탕으로 매트와 소도구를 활용한 필라테스</h5>
-                                <div class="btn">
-                                    <a href="#">강좌 커리큘럼</a>
-                                    <a href="#">수강료 조회</a>
+                                <h6 class="card-text1" style="margin-top: 15px;">Matt Pilates & Smaall Tools</h6>
+                                <h4 class="card-title" style="margin-top: 5px;">매트 필라테스 & 소도구 </h4>
+                                <h5 class="parag" style="margin-top: 10px;">인체기능 해부학 지식을 바탕으로 매트와 소도구를 활용한 필라테스 강좌</h5>
+                                <div class="btn" style="background-color: gray; height: 40px; line-height: 40px; border-radius: 7px;
+                                animation: fadeIn 4s 1s infinite linear alternate; ">
+                                    <a style="color: white; cursor: pointer;">강좌 커리큘럼 </a>
+                                    <a style="color: white; ">ㅣ</a>
+                                    <a style="color: white; cursor: pointer; ">수강료 조회</a>
                                 </div><br />
                             </div>
                         </li>
-                        <ul class="card-item1">
+
+                        <ul class="card-item2">
                             <li>
-                                <img src="https://www.firstyp.co.kr/images/imgs/main-program-thumb00.jpg">
+                                <img src="https://www.firstyp.co.kr/images/imgs/main-program-thumb01.jpg">
                                 <div class="info">
-                                    <h6 class="card-text1">Reformer master</h6>
-                                    <h4 class="card-title">리포머 Master </h4>
-                                    <h5 class="parag">대표적인 필라테스 기구 5종 중 리포머를 활용한 필라테스 마스터 자격 취득 과정</h5>
-                                    <div class="btn">
-                                        <a href="#">강좌 커리큘럼</a>
-                                        <a href="#">수강료 조회</a>
+                                    <h6 class="card-text1" style="margin-top: 15px;">Reformer master</h6>
+                                    <h4 class="card-title" style="margin-top: 5px;">리포머 Master </h4>
+                                    <h5 class="parag" style="margin-top: 10px;">대표적인 필라테스 기구 5종 중 리포머를 활용한 필라테스 강좌</h5>
+                                    <div class="btn"
+                                        style="background-color: gray; height: 40px; line-height: 40px; border-radius: 7px;">
+                                        <a style="color: white; cursor: pointer;">강좌 커리큘럼 </a>
+                                        <a style="color: white;">ㅣ</a>
+                                        <a style="color: white; cursor: pointer; ">수강료 조회</a>
                                     </div>
                                 </div>
                             </li>
-
-
-
                         </ul>
-
-
-
                     </ul>
                 </div>
+                <div class="card-group" style="display:flex; margin-bottom: 270px; ">
+                    <ul class="card-item1">
+                        <li>
+                            <img src="https://www.firstyp.co.kr/images/imgs/main-program-thumb02.jpg"
+                                style="margin:auto">
+                            <div class="info">
+                                <h6 class="card-text1" style="margin-top: 15px;">Rehabilitation Pilates</h6>
+                                <h4 class="card-title" style="margin-top: 5px;">재활 필라테스 </h4>
+                                <h5 class="parag" style="margin-top: 10px;">근골격계의 올바른 움직임을 느끼고 교정을 통해 통증을 치료하는 강좌</h5>
+                                <div class="btn" style="background-color: gray; height: 40px; line-height: 40px; border-radius: 7px;
+                                animation: fadeIn 4s 1s infinite linear alternate; ">
+                                    <a style="color: white; cursor: pointer;">강좌 커리큘럼 </a>
+                                    <a style="color: white; ">ㅣ</a>
+                                    <a style="color: white; cursor: pointer; ">수강료 조회</a>
+                                </div><br />
+                            </div>
+                        </li>
+
+                        <ul class="card-item2">
+                            <li>
+                                <img src="https://www.firstyp.co.kr/images/imgs/main-program-thumb06.jpg">
+                                <div class="info">
+                                    <h6 class="card-text1" style="margin-top: 15px;">Cadillac Master</h6>
+                                    <h4 class="card-title" style="margin-top: 5px;">캐딜락 Master </h4>
+                                    <h5 class="parag" style="margin-top: 10px;">대기구의 고급동작과 콤비 기구,스프링보드,스파인코렉터 동작을 배우는 강좌
+                                    </h5>
+                                    <div class="btn"
+                                        style="background-color: gray; height: 40px; line-height: 40px; border-radius: 7px;">
+                                        <a style="color: white; cursor: pointer;">강좌 커리큘럼 </a>
+                                        <a style="color: white;">ㅣ</a>
+                                        <a style="color: white; cursor: pointer; ">수강료 조회</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="footer" style="background-color: rgb(87, 84, 84)" ;>
+                    <div class="footer-up" style="width:100%; height:45px; ">
+                        <p style="margin: 0px 0px 10px 150px; line-height: 45px;"> 개인정보처리방침 ㅣ 영상정보처리운영관리방침 ㅣ 이용약관 </p>
+                    </div>
+
+                    <hr style="color: gray;" />
+
+                    <div class="fotter-down" style="width:100%; height:100px;">
+                        <h4 style="margin: 20px 0px 0px 150px;">Pilates Academy</h4>
+                        <p style="margin: 10px 0px 0px 150px;">사업자등록번호: 526-65-98566 ㅣ 주소: 충남 천안시 동남구 대흥로 ㅣ 대표전화:
+                            041-475-1546</p>
+                    </div>
+                </div>
+
+
 
 
 

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            /* height: 100vh; */
+
+        }
+
+        .headerArea {
+            display: flex;
+            width: 70%;
+            height: 80px;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+            /* border: 1px solid  rgba(233, 174, 87, 0.822); */
+
+        }
+
+        h1 a {
+            font-family: 'Roboto', sans-serif;
+            font-size: 35px;
+            position: right;
+            text-decoration: none;
+            color: rgba(233, 174, 87, 0.822);
+
+        }
+
+        ul li {
+
+            display: inline-block;
+            margin: 0 20px;
+            border: 0.5px;
+        }
+
+        .nav a {
+
+            text-decoration: none;
+            color: black
+        }
+
+        .nav a:hover {
+            color: rgba(233, 174, 87, 0.822);
+
+        }
+
+        .nav button {
+            color: black;
+            border-radius: 5px;
+            background: none;
+            padding: 3px 9px;
+            border: 2px solid rgba(233, 174, 87, 0.822);
+        }
+
+        .nav button:hover {
+            background-color: rgb(190, 151, 111);
+
+        }
+
+        hr {
+
+            width: 100%;
+
+        }
+
+        .login-content {
+            margin: auto;
+            width: 100%;
+            height: 670px;
+        }
+
+        .login-content .inner {
+            margin: auto;
+            width: 400PX;
+            height: 530PX;
+            text-align: center;
+            border-radius: 20px;
+            border: 2px solid rgba(233, 174, 87, 0.822);
+
+        }
+
+        .id-box {
+            width: 400px;
+            height: 30px;
+
+        }
+
+        .pw-box {
+            width: 400px;
+            height: 80px;
+        }
+
+        .find_idpw {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .v-line {
+            border-left: medium soild black;
+            height: 100%;
+            left: 50%;
+            position: absolute;
+        }
+
+
+
+        .login-tip_hr hr {
+            width: 83%;
+            margin: auto;
+        }
+
+        .footer {
+
+            background-color: rgb(87, 84, 84);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="container">
+
+            <div class="headerArea">
+                <h1><a href='#' onclick="location.href='PilaMain.html'">Pilatas</a></h1>
+
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">수강신청 및 이용안내</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                        <li><a href="#">My Page</a></li>
+                        <li><button onclick="location.href='loginpage.html'">로그인</button></li>
+
+                    </ul>
+                </div>
+            </div>
+            <hr /><br /><br /><br /><br />
+
+
+            <div class="login-content">
+                <div class="inner">
+                    <h1 style="margin-top: 40px;">로그인</h1><br /><br />
+
+                    <input id="loginid" name="loginid" value type="text" title="아이디 입력" placeholder="아이디를 입력해주세요"
+                        style="width: 280px; height: 40px; margin: 5px;">
+
+                    <input type="text" placeholder="비밀번호를 입력해주세요" style="width: 280px; height: 40px; margin: 5px;">
+                    <br /><br />
+                    <div class="btn" style="width: 200px; height:42px; margin: auto; line-height: 40px; border-radius: 2px;
+                      border: 2px solid rgba(233, 174, 87, 0.822); " onclick="location.href='PilaMain.html' ">
+                        <p style="cursor:pointer;">로그인</p>
+                    </div> <br />
+                    <div class="find_idpw">
+                        <h5 style=" width:100px; height:30px;">
+                            <p style="cursor:pointer;">아이디 찾기 </p>
+                            <div class="v-line"></div>
+                        </h5>
+
+                        <h5 style=" width:100px; height:30px;  ">
+                            <p style="cursor:pointer;">비밀번호 찾기 </p>
+                        </h5>
+                    </div>
+                    <br />
+                    <div class="login-tip_hr">
+                        <hr />
+                    </div>
+
+                    <div class="login-Tip" style="margin-top: 30px;">
+                        <h4 style="color: rgb(24, 24, 24);">사이트 방문이 처음이신가요?</h4>
+                        <h5 style="color: rgb(90, 88, 88); margin:5px 0px 15px 0px ;">수강신청을 하시려면 회원으로 가입해주세요.</h5>
+                        <div class="btn2" style="width: 100px; height:30px; margin: auto; line-height: 25px; border-radius: 2px;
+                            border: 2px solid rgba(85, 84, 82, 0.822); ">
+                            <P style="font-size: 12px; cursor: pointer;">회원가입</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-up" style="width:100%; height:45px; ">
+                    <p style="margin: 0px 0px 10px 150px; line-height: 45px;"> 개인정보처리방침 ㅣ 영상정보처리운영관리방침 ㅣ 이용약관 </p>
+                </div>
+
+                <hr style="color: gray;" />
+
+                <div class="fotter-down" style="width:100%; height:100px;">
+                    <h4 style="margin: 20px 0px 0px 150px;">Pilates Academy</h4>
+                    <p style="margin: 10px 0px 0px 150px;">사업자등록번호: 526-65-98566 ㅣ 주소: 충남 천안시 동남구 대흥로 ㅣ 대표전화:
+                        041-475-1546</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
