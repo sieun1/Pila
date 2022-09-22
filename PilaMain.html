@@ -16,60 +16,71 @@
             box-sizing: border-box;
         }
 
-        .menu li{
+        .menu li {
             list-style: none;
-           
-    
+
+
         }
-        .menu a{
+
+        .menu a {
             text-decoration: none;
-            font-size: 12px;
+            font-size: 14px;
+
         }
+
         .menu {
             position: relative;
-            width: 770px;
-            overflow: hidden;
-            margin: 150px auto;
+            width: 700px;
+            /* overflow: hidden; */
+
+            margin: auto;
+
         }
-        
-        .menu > li {
+
+        .menu>li {
             width: 30%;
             float: left;
             text-align: center;
             line-height: 40px;
-            background-color: rgb(230, 198, 150);
+            background-color: rgb(255, 255, 255);
         }
 
-        .menu a {
-            /* color: rgb(150, 80, 80); */
-        }
-
-        .submenu > li {
+        
+        .submenu>li {
             line-height: 40px;
             background-color: rgb(240, 204, 170);
         }
 
         .submenu {
-            position: relative;
+            position: absolute;
             height: 0;
             overflow: hidden;
+            /* width: auto; */
         }
 
-        .menu > li:hover {
-            background-color: rgb(255, 255, 255);
+        .submenu li {
+            width: 168px;
+        }
+
+        .submenu a {
+            font-size: 12px;
+        }
+
+
+        .menu>li:hover {
+            background-color: rgb(247, 227, 212);
             transition-duration: 0.5s;
         }
-        .menu > li:hover .submenu{
+
+        .menu>li:hover .submenu {
             height: 200px;
             transition-duration: 0.7s;
         }
 
         .container {
             width: 100%;
-          
 
-
-        }position: relative;
+        }
 
         .headerArea {
             display: flex;
@@ -85,17 +96,17 @@
         h1 a {
             font-family: 'Roboto', sans-serif;
             font-size: 35px;
-            position: right;
+            position: left;
             text-decoration: none;
             color: rgba(233, 174, 87, 0.822);
-
+            margin-right: 150px;
         }
 
         ul li {
 
             /* display: inline-block;
             margin: 0 20px;
-            border: 0.5px; */s
+            border: 0.5px; */
         }
 
         .nav a {
@@ -114,6 +125,7 @@
             border-radius: 5px;
             background: none;
             padding: 3px 11px;
+            width: 70px;
             border: 2px solid rgba(233, 174, 87, 0.822);
         }
 
@@ -164,6 +176,7 @@
             height: 120px;
             margin: auto;
             text-align: center;
+            font-size: 17px;
         }
 
         .card-item1 {
@@ -171,7 +184,18 @@
             display: flex;
             width: 340px;
             height: 400px;
-            margin: 10px 100px 10px 265px;
+            margin: 40px 130px 0px 295px;
+            border-radius: 5px;
+            text-align: center;
+
+        }
+
+        .card-item2 {
+
+            display: flex;
+            width: 340px;
+            height: 400px;
+            margin: 0px 130px 10px 10px;
             border-radius: 5px;
             text-align: center;
 
@@ -193,44 +217,37 @@
             <div class="headerArea">
                 <h1><a href='#' onclick="location.href='PilaMain.html'">Pilatas</a></h1>
 
-                
-                    <ul class="menu">
-                        <li>
-                            <a href="#">수강신청 및 이용안내</a>
-                            <ul class="submenu">
-                                <li><a href="#">강좌 스케줄</a></li>
-                                <li><a href="#">수강신청 변경 및 취소 안내</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">커뮤니티</a>
-                            <ul class="submenu">
-                                <li><a href="#">공지사항/이벤트</a></li>
-                                <li><a href="#">수강후기</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">My 문화센터</a>
-                            <ul class="submenu">
-                                <li><a href="#">회원정보변경</a></li>
-                                <li><a href="#">수강내역 조회</a></li>
-                                
-                            </ul>
-                           
-                        </li>
-                    </ul>
-                    <div class="nav">
+
+                <ul class="menu">
+                    <li>
+                        <a href="#">수강신청 및 이용안내</a>
+                        <ul class="submenu">
+                            <li><a href="#" onclick="location.href='lesson_schejul.html'">강좌 스케줄 및 신청</a></li>
+                            <li><a href="#" onclick="location.href='info.html'">시설 이용안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">커뮤니티</a>
+                        <ul class="submenu">
+                            <li><a href="#">공지사항/이벤트</a></li>
+                            <li><a href="#">수강후기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">My 문화센터</a>
+                        <ul class="submenu">
+                            <li><a href="#">회원정보변경</a></li>
+                            <li><a href="#">수강내역 조회</a></li>
+
+                        </ul>
+
+                    </li>
+                </ul>
+                <div class="nav">
                     <button onclick="location.href='loginpage.html'">로그인</button>
                 </div>
-                    <!-- <ul>
-                        <li><a href="#">수강신청 및 이용안내</a></li>
-                        
-                        <li><a href="#">커뮤니티</a></li>
-                        <li><a href="#">My Page</a></li>
-                        <li><button onclick="location.href='loginpage.html'">로그인</button></li>
+        
 
-                    </ul> -->
-                
             </div>
 
             <hr /><br />
@@ -263,11 +280,11 @@
             <div class="article">
                 <div class="artbar">
                     <br /> <br /> <br />
-                    <p></p>강좌소개</p>
+                    <p>강좌소개</p>
                 </div>
                 <div class="card-group" style="display:flex; margin-bottom: 35px; ">
-                    <ul class="card-item1">
-                        <li>
+                    <ul class="card-item1" style="list-style: none;">
+                        <li style="list-style: none;">
                             <img src="https://www.firstyp.co.kr/images/imgs/main-program-thumb00.jpg"
                                 style="margin:auto">
                             <div class="info">
@@ -277,14 +294,14 @@
                                 <div class="btn" style="background-color: gray; height: 40px; line-height: 40px; border-radius: 7px;
                                 animation: fadeIn 4s 1s infinite linear alternate; ">
                                     <a style="color: white; cursor: pointer;">강좌 커리큘럼 </a>
-                                    <a style="color: white; ">ㅣ</a>
-                                    <a style="color: white; cursor: pointer; ">수강료 조회</a>
+                                   
+                                   
                                 </div><br />
                             </div>
                         </li>
 
-                        <ul class="card-item2">
-                            <li>
+                        <ul class="card-item2" style="list-style: none;">
+                            <li style="list-style: none;">
                                 <img src="https://www.firstyp.co.kr/images/imgs/main-program-thumb01.jpg">
                                 <div class="info">
                                     <h6 class="card-text1" style="margin-top: 15px;">Reformer master</h6>
@@ -293,8 +310,8 @@
                                     <div class="btn"
                                         style="background-color: gray; height: 40px; line-height: 40px; border-radius: 7px;">
                                         <a style="color: white; cursor: pointer;">강좌 커리큘럼 </a>
-                                        <a style="color: white;">ㅣ</a>
-                                        <a style="color: white; cursor: pointer; ">수강료 조회</a>
+                                        
+                                        
                                     </div>
                                 </div>
                             </li>
@@ -302,25 +319,24 @@
                     </ul>
                 </div>
                 <div class="card-group" style="display:flex; margin-bottom: 270px; ">
-                    <ul class="card-item1">
-                        <li>
+                    <ul class="card-item1" style="list-style: none;">
+                        <li style="list-style: none;">
                             <img src="https://www.firstyp.co.kr/images/imgs/main-program-thumb02.jpg"
                                 style="margin:auto">
                             <div class="info">
                                 <h6 class="card-text1" style="margin-top: 15px;">Rehabilitation Pilates</h6>
-                                <h4 class="card-title" style="margin-top: 5px;">재활 필라테스 </h4>
+                                <h4 class="card-title" style="margin-top: 5px;">1:1 재활 필라테스 </h4>
                                 <h5 class="parag" style="margin-top: 10px;">근골격계의 올바른 움직임을 느끼고 교정을 통해 통증을 치료하는 강좌</h5>
                                 <div class="btn" style="background-color: gray; height: 40px; line-height: 40px; border-radius: 7px;
                                 animation: fadeIn 4s 1s infinite linear alternate; ">
                                     <a style="color: white; cursor: pointer;">강좌 커리큘럼 </a>
-                                    <a style="color: white; ">ㅣ</a>
-                                    <a style="color: white; cursor: pointer; ">수강료 조회</a>
+                                    
                                 </div><br />
                             </div>
                         </li>
 
                         <ul class="card-item2">
-                            <li>
+                            <li style="list-style: none;">
                                 <img src="https://www.firstyp.co.kr/images/imgs/main-program-thumb06.jpg">
                                 <div class="info">
                                     <h6 class="card-text1" style="margin-top: 15px;">Cadillac Master</h6>
@@ -330,8 +346,8 @@
                                     <div class="btn"
                                         style="background-color: gray; height: 40px; line-height: 40px; border-radius: 7px;">
                                         <a style="color: white; cursor: pointer;">강좌 커리큘럼 </a>
-                                        <a style="color: white;">ㅣ</a>
-                                        <a style="color: white; cursor: pointer; ">수강료 조회</a>
+                                        
+                                        
                                     </div>
                                 </div>
                             </li>
