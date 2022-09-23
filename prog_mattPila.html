@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .menu li {
+            list-style: none;
+
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            font-size: 14px;
+
+        }
+
+        .menu {
+            position: relative;
+            width: 700px;
+            /* overflow: hidden; */
+
+            margin: auto;
+
+        }
+
+        .menu>li {
+            width: 30%;
+            float: left;
+            text-align: center;
+            line-height: 40px;
+            background-color: rgb(255, 255, 255);
+        }
+
+
+        .submenu>li {
+            line-height: 40px;
+            background-color: rgb(240, 204, 170);
+        }
+
+        .submenu {
+            position: absolute;
+            height: 0;
+            overflow: hidden;
+            /* width: auto; */
+        }
+
+        .submenu li {
+            width: 168px;
+        }
+
+        .submenu a {
+            font-size: 12px;
+        }
+
+
+        .menu>li:hover {
+            background-color: rgb(247, 227, 212);
+            transition-duration: 0.5s;
+        }
+
+        .menu>li:hover .submenu {
+            height: 200px;
+            transition-duration: 0.7s;
+        }
+
+        .container {
+            width: 100%;
+
+        }
+
+        .headerArea {
+            display: flex;
+            width: 70%;
+            height: 85px;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+            /* border: 1px solid  rgba(233, 174, 87, 0.822); */
+
+        }
+
+        h1 a {
+            font-family: 'Roboto', sans-serif;
+            font-size: 35px;
+            position: left;
+            text-decoration: none;
+            color: rgba(233, 174, 87, 0.822);
+            margin-right: 150px;
+        }
+
+        ul li {
+
+            /* display: inline-block;
+            margin: 0 20px;
+            border: 0.5px; */
+        }
+
+        .nav a {
+
+            /* text-decoration: none;
+            color: black */
+        }
+
+        .nav a:hover {
+            /* color: rgba(233, 174, 87, 0.822); */
+
+        }
+
+        .nav button {
+            color: black;
+            border-radius: 5px;
+            background: none;
+            padding: 3px 11px;
+            width: 70px;
+            border: 2px solid rgba(233, 174, 87, 0.822);
+        }
+
+        .nav button:hover {
+            background-color: rgb(190, 151, 111);
+
+        }
+
+        hr {
+
+            width: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="headerArea">
+            <h1><a href='#' onclick="location.href='PilaMain.html'">Pilatas</a></h1>
+
+
+            <ul class="menu">
+                <li>
+                    <a href="#">수강신청 및 이용안내</a>
+                    <ul class="submenu">
+                        <li><a href="#" onclick="location.href='lesson_schejul.html'">강좌 스케줄 및 신청</a></li>
+                        <li><a href="#" onclick="location.href='info.html'">시설 이용안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">커뮤니티</a>
+                    <ul class="submenu">
+                        <li><a href="#" onclick="location,href='notice.html'">공지사항/이벤트</a></li>
+                        <li><a href="#" onclick="location,href='review.html'">수강후기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">My 문화센터</a>
+                    <ul class="submenu">
+                        <li><a href="#">회원정보변경</a></li>
+                        <li><a href="#">수강내역 조회</a></li>
+
+                    </ul>
+
+                </li>
+            </ul>
+            <div class="nav">
+                <button onclick="location.href='loginpage.html'">로그인</button>
+            </div>
+        </div>
+
+        <hr /><br /><br /><br />
+
+        <div class="program" style="width: 700px; height:1500px; margin: auto;">
+            <div class="visual">
+                <img src="https://www.firstyp.co.kr/images/imgs/pilates/visual-mat-level2.jpg" style="width: 700px;">
+            </div>
+            <div class="detail">
+                <h4 style="color: gray; margin-top: 40px;">Matwork and small Equipment</h4>
+                <h2 style="color: rgb(47, 47, 51); margin-top: 15px;">매트 & 소도구 Basic / Intermediate 과정 </h2>
+                <p class="parag" style="margin-top:30px; ">
+                    매트 필라테스 & 소도구 과정은
+                    필라테스 <span style="color: rgb(49, 49, 54); ">입문자가 배우기 쉬운 과정으로 매트를 활용한</p></span> </p>
+
+                <p>필라테스의 기본이 되는 간단하고 단순한 움직임 패턴으로</p>
+                이뤄져 있습니다. 매트에 눕거나 지지하며 동작을 수행하고<br>
+                스스로 자세와 체형분석을 통해 올바르게 교정해 나가는 과정입니다.</p>
+                </p> <br/><br/><br/>
+                <div class="cell" style="overflow: hidden; width: 690px; margin: auto; text-align: left;">
+                    <div class="n1" style="float: left;">
+                        <img src="https://www.firstyp.co.kr/images/imgs/pilates/mat-level2-cont1.jpg" style="">
+                        <div class="ico-cont">
+                            <div class="detail-info" style="text-align: center; ">
+                                <strong>필라테스 호흡</strong>
+                                <br/>
+                                필라테스에서 가장 중요하고
+                                <br>
+                                기초적인 횡경막 호흡법을 배웁니다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="n2">
+                        <div class="ico-cont">
+                        <div class="detail-info" style="text-align: center; ">
+                            <strong>필라테스 기본동작</strong>
+                            <br>
+                            필라테스 기본동작을 통해 <br>
+                            호흡을 연습해 나갑니다.
+                        </div>
+                        <img src="https://www.firstyp.co.kr/images/imgs/pilates/mat-level2-cont2.jpg">
+                        </div>
+                    </div>
+                </div><Br/><Br/><Br/><Br/>
+                <div class="cell" style="">
+                    <div class="n1" style="">
+                        <img src="https://www.firstyp.co.kr/images/imgs/pilates/mat-level2-cont3.jpg"
+                        style="margin-left: 130px;">
+                    </div><br><br><br>
+                    <div class="n2">
+                    <div class="ico-cont">
+                        <div class="detail-info">
+                            <strong>매트 필라테스 & 소도구 실기</strong>
+                            매트 필라테스 기본 포지션에서 70여가지의
+                            <br> 매트 동작과 올바른 호흡법을 배우고
+                            <br> 신체를 교정하는 동작을 해 나갑니다.
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="job-info">
+                    <h4>
+                        진정한 건강을 찾을 수 있는
+                        <strong>필라테스</strong>
+                    </h4>
+                    <p class="prarg">
+                        신체의 근육을 과학적으로 단련하기 위해 만들어진
+                        <br>필라테스는 전신의 균형잡힌 발달과 몸을 완벅하게
+                        <br>
+                        컨트롤하는 것을 넘어 마음가지 통달하는 운동입니다.
+                        <br>
+                        필라테스를 통해 몸과 마음을 다스리고 진정한 건강을 찾을 수 있을 것입니다.
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+</body>
+
+</html>

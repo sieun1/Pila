@@ -136,6 +136,35 @@
             width: 100%;
 
         }
+
+        table {
+            margin: auto;
+            color: rgb(82, 77, 77);
+            width: 80%;
+            /* height: 500px; */
+
+            /* margin:30px 0px 30px 270px; */
+
+            border-collapse: collapse;
+
+        }
+
+        th {
+
+            border: 1px solid rgb(78, 78, 78);
+
+        }
+
+        td {
+
+            border-radius: 5px;
+            border: 1px solid rgb(78, 78, 78);
+
+        }
+
+       table li {
+            margin-left: 30px;
+        }
     </style>
 </head>
 
@@ -157,8 +186,8 @@
                 <li>
                     <a href="#">커뮤니티</a>
                     <ul class="submenu">
-                        <li><a href="#">공지사항/이벤트</a></li>
-                        <li><a href="#">수강후기</a></li>
+                        <li><a href="#" onclick="location,href='notice.html'">공지사항/이벤트</a></li>
+                        <li><a href="#" onclick="location,href='review.html'" >수강후기</a></li>
                     </ul>
                 </li>
                 <li>
@@ -175,14 +204,128 @@
                 <button onclick="location.href='loginpage.html'">로그인</button>
             </div>
         </div>
-        <hr /><br/><br/>
+        <hr /><br /><br />
 
         <div class="info_header" style="width: 100%; height:200px; 
         background-image: url(https://cdn.mindgil.com/news/photo/202010/69959_4950_1529.jpg);
-        background-position: center;" >
-            <h1 style="font-size: 28px; text-align: center; line-height: 160px; color: rgb(88, 75, 57);">시설 이용안내</h1>
-            <!-- <img src="https://cdn.mindgil.com/news/photo/202010/69959_4950_1529.jpg"> -->
+        background-position: center;">
+            <h1 style="font-size: 28px; text-align: center; line-height: 190px; color: rgb(105, 92, 70);
+            ">시설 이용안내</h1>
+        </div><br /><br /><br /><br />
+
+        <div class="info_body">
+            <p style="font-size: 25px; margin: 0px 0px 30px 130px;">● 시설 이용안내</p>
+            <table style="height: 500px;">
+                <tr>
+                    <th>이용</th>
+                    <th>시설 이용 안내</th>
+                </tr>
+                <tr>
+                    <th>회원증 발급</th>
+                    <td>
+                        <li>최초(1회) 발급 무료<br>
+                            ※재발급수수료 1,000원</li>
+                    </td>
+                </tr>
+                <tr>
+                    <th>주차시설</th>
+                    <td>
+                        <li>자동번호인식시스템 운영<br>
+                            ＊가입 시 차량번호 등재 (홈페이지 → 로그인 → 나의 정보관리 → 차량번호 입력 후 수정</li>
+                        <li> 강습 이용회원 최대 3시간 무료</li>
+                    </td>
+
+                </tr>
+
+            </table><br /><br />
+
+            <p style="font-size: 25px; margin: 0px 0px 30px 130px;">● 환불 안내</p>
+            <table style="height: 500px;">
+                <tr>
+                    <th>환불</th>
+                    <th>환불 규정 및 처리 방법</th>
+                </tr>
+                <tr>
+                    <th>관련근거</th>
+                    <td>
+                        <li>한국소비원 소비자 피해 보상 규정</li>
+                    </td>
+                </tr>
+                <tr>
+                    <th>환불안내</th>
+                    <td>
+                        <li>1회 수업 이전 : 사용료의 전액반환</li>
+                        <li>1회 수업 이후 : 취소일까지의 이용일수에 해당하는 금액 공제 후 반환</li>
+                        <li>환불일 기준이며, 휴일과 휴관일 포함</li>
+                    </td>
+                </tr>
+                <tr>
+                    <th>온라인 환불방법</th>
+                    <td>
+                        <li>
+                            홈페이지 → 마이페이지 → 수강환불 → 수강이력현황 → 결제취소 (회원 본인 직접 가능)
+                        </li>
+                    </td>
+                </tr>
+                <tr>
+                    <th>현장 환불방법</th>
+                    <td>
+                        <li>안내데스크 문의</li>
+                    </td>
+                </tr>
+            </table>
+        </div><br /><br />
+
+        <p style="font-size: 25px; margin: 0px 0px 30px 130px;">● 기타사항</p>
+        <table style="height:300px;">
+            <tr>
+                <th>귀중품분실</th>
+                <td>
+                    <li>개인 휴대품 및 현금 분실은 본인 책임</li>
+                </td>
+            </tr>
+            <tr>
+                <th> 유실물 관리 </th>
+                <td>
+                    <li>유실물 습득 후 1개우러 보관 후 폐기(접수처)</li>
+                </td>
+            </tr>
+            <tr>
+                <th>시설파손</th>
+                <td>
+                    <li>시설파손 및 분실은 이용자 부담(개인변상)을 원칙으로 함</li>
+                </td>
+            </tr>
+        </table><br /><br />
+        <p style="font-size: 25px; margin: 0px 0px 30px 130px;">● 이용제한</p>
+        <table style="height: 200px;">
+
+            <tr>
+                <td>
+                    <li style="margin-bottom: 30px;"> 회원증을 타인에게 대여하거나 학원 측의 승인 없이 양도, 양수했을 때</li>
+                    <li style="margin-bottom: 30px;">회원 간 또는 직원,강사에게 폭언, 폭행 등으로 이용질서를 문란하게 하는 경우</li>
+                    <li> 강사의 지시 불이행등 정상적인 강습 및 이용을 방해하는 행위로 타 회원의 이용에 불편을 끼치는 경우</li>
+                </td>
+            </tr>
+
+
+        </table><br/><br/><br/><br/><br/><br/>
+        <div class="footer" style="background-color: rgb(87, 84, 84)" ;>
+            <div class="footer-up" style="width:100%; height:45px; ">
+                <p style="margin: 0px 0px 10px 150px; line-height: 45px;"> 개인정보처리방침 ㅣ 영상정보처리운영관리방침 ㅣ 이용약관 </p>
+            </div>
+
+            <hr style="color: gray;" />
+
+            <div class="fotter-down" style="width:100%; height:100px;">
+                <h4 style="margin: 20px 0px 0px 150px;">Pilates Academy</h4>
+                <p style="margin: 10px 0px 0px 150px;">사업자등록번호: 526-65-98566 ㅣ 주소: 충남 천안시 동남구 대흥로 ㅣ 대표전화:
+                    041-475-1546</p>
+            </div>
         </div>
+
+
+
 
     </div>
 </body>
