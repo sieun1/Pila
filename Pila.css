@@ -28,8 +28,9 @@
 }
 
 h1 a {
+    font-family: 'Nanum Pen Script', cursive;
     font-size: 40px;
-    font-family: 'Roboto', sans-serif;
+   
     text-decoration: none;
     color: rgba(233, 174, 87, 0.822);
 
@@ -47,6 +48,7 @@ h1 a {
     height: 80px; */
     text-decoration: none;
     color: white;
+    
 
  }
 
@@ -56,6 +58,7 @@ h1 a {
  }
 
 .nav button {
+   
     color:  white;
     border-radius: 5px;
     background: none;
@@ -69,7 +72,8 @@ h1 a {
         transform: translate(-50%,-50%);
         color:white;
         text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: large;
     
     }
     
