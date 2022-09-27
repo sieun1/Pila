@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Open+Sans:wght@500&family=Sunflower&display=swap" rel="stylesheet">
     <style>
         * {
+           
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -21,15 +25,17 @@
 
         .menu a {
             text-decoration: none;
-            font-size: 14px;
-            color: black;
+            font-size: 25px;
+            color: rgb(51, 47, 47);
+            font-family: 'Nanum Pen Script', cursive;
 
         }
 
         .menu {
+           
             position: relative;
             width: 700px;
-            color: black;
+            color: rgb(66, 62, 62);
             /* overflow: hidden; */
 
             margin: auto;
@@ -46,11 +52,13 @@
 
 
         .submenu>li {
+            width: 30%;
             line-height: 40px;
             background-color: rgb(240, 204, 170);
         }
 
         .submenu {
+            width: 30%;
             position: absolute;
             height: 0;
             overflow: hidden;
@@ -58,11 +66,13 @@
         }
 
         .submenu li {
-            width: 168px;
+            width: 100%;;
         }
 
         .submenu a {
-            font-size: 12px;
+           
+
+            font-size: 20px;
         }
 
 
@@ -180,6 +190,10 @@
             background-color: rgb(190, 151, 111);
 
         }
+        .btns a {
+            text-decoration: none;
+            color: black;
+        }
     </style>
 </head>
 
@@ -200,19 +214,17 @@
                     </li>
                 <li>
                     <a href="#">커뮤니티</a>
-                    <ul class="submenu">
-                        <li><a href="#" onclick="location,href='notice.html'">공지사항/이벤트</a></li>
-                        <li><a href="#" onclick="location,href='review.html'">수강후기</a></li>
-                    </ul>
+                        <ul class="submenu">
+                            <li onclick="location.href='loginpage.html'"><a href="#" onclick="location,href='notice.html'">공지사항/이벤트</a></li>
+                            <li><a href="#" onclick="location,href='review.html'">수강후기</a></li>
+                        </ul>
                 </li>
                 <li>
                     <a href="#">My 문화센터</a>
                     <ul class="submenu">
-                        <li><a href="#">회원정보변경</a></li>
-                        <li><a href="#">수강내역 조회</a></li>
-
+                        <li onclick="location.href='loginpage.html'"><a href="#"><p onclick="alert('먼저 로그인을 해주시기 바랍니다.')">회원정보변경</p></a></li>
+                        <li onclick="location.href='loginpage.html'"><a href="#"><p onclick="alert('먼저 로그인을 해주시기 바랍니다.')">수강내역 조회</p></a></li>
                     </ul>
-
                 </li>
             </ul>
             <div class="nav">
@@ -224,7 +236,7 @@
 
         <hr /><br />
 
-        <div class="schejul_section">
+        <div class="schejul_section" style="width: 1300px; margin:auto;">
             <div class="schejul_section_header">
                 <h1
                     style="text-align: center; margin-top:50px; margin-bottom: 50px; font-size:38px; color: rgb(97, 96, 94);">
@@ -279,7 +291,7 @@
                         <div class="btns" style=" ">
                         <button onclick="location.href='prog_mattPila.html'" style="margin: 12px 2px 120px 598px;"
                         >커리큘럼 보기</button>
-                        <button onclick="location.href='loginpage.html'" style="margin: 0px 0px 0px 0px;" ><a href="#"><p onclick="alert('먼저 로그인을 해주시기 바랍니다.')">수강신청</p></a></button>
+                        <button onclick="location.href='loginpage.html'" style="margin: 0px 0px 0px 0px;" ><a href="#" ><p onclick="alert('먼저 로그인을 해주시기 바랍니다.')">수강신청</p></a></button>
                     </div>
                     </fieldset>
                 </div>
