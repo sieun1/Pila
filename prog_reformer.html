@@ -48,11 +48,13 @@
 
         
         .submenu>li {
+            width: 30%;
             line-height: 40px;
             background-color: rgb(240, 204, 170);
         }
 
         .submenu {
+            width: 30%;
             position: absolute;
             height: 0;
             overflow: hidden;
@@ -60,7 +62,7 @@
         }
 
         .submenu li {
-            width: 168px;
+            width: 100%;
         }
 
         .submenu a {
@@ -193,12 +195,98 @@
             to{
                 right: 0px;
             }
-    </style>
+        }
+            .view-quick {
+            margin-top: 120px;
+            position: fixed;
+            right: 0;
+            top: 0;
+            transition: all .2s;
+        }
+        .view-quick h5{
+            background: #a99d8f;
+    color: #fff;
+    display: block;
+    width: 115px;
+    height: 34px;
+    border: solid 1px #e8e8e8;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 0;
+    line-height: 34px;
+    text-align: center;
+    font-weight: 300;
+
+        }
+        .view-quick .item-wrap{
+            border: solid 1px #e8e8e8;
+    border-bottom: 0;
+    background: #fff;
+
+        }
+        .view-quick .item-wrap .items {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px #e8e8e8;
+}
+.view-quick .item-wrap .items img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    border-radius: 100%;
+    margin: 15px 0;
+}
+.view-quick .item-wrap .items .labels {
+    padding: 0 7px;
+    display: inline-block;
+    border: solid 1px #a99d8f;
+    height: 20px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #a99d8f;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.view-quick .item-wrap .items .name {
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    color: #333;
+    margin: 8px 0 15px;
+    cursor: pointer;
+}
 
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="view-quick">
+            <h5>관련 교육과정</h5>
+            <div class="item-wrap">
+                <a onclick="location.href='prog_mattPila.html'" class="items">
+                    <img src="https://www.firstyp.co.kr/images/imgs/pilates/visual-mat-level1.jpg" alt>
+                    <span class="labels" >Pillatas</span>
+                    <span class="name">매트 필라테스</span>
+                </a>
+                <a onclick="location.href='prog_reformer.html'" class="items">
+                    <img src="https://www.firstyp.co.kr/images/imgs/pilates/v0723-02.jpg" alt>
+                    <span class="labels" >Reformer</span>
+                    <span class="name">리포며 Master</span>
+                </a>
+                <a onclick="location.href='prog_jaehwal.html'" class="items">
+                    <img src="https://www.firstyp.co.kr/images/imgs/pilates/visual-heal-level1.jpg" alt>
+                    <span class="labels" >Jaehwal</span>
+                    <span class="name">1:1 재활필라테스</span>
+                </a>
+                <a onclick="location.href='prog_cadillac.html'" class="items">
+                    <img src="https://www.firstyp.co.kr/images/imgs/pilates/visual-obj-level3.jpg" alt>
+                    <span class="labels" >Cadillac</span>
+                    <span class="name">캐딜락 Master</span>
+                </a>
+            </div>
+        </div>
 
         <div class="headerArea">
             <h1><a href='#' onclick="location.href='PilaMain.html'">Pilatas</a></h1>
@@ -235,6 +323,7 @@
     
 
         </div>
+        
 
         <hr /><br/><br/><br/> 
         <div class="program" style="width: 700px; height:1800px; margin: auto;">

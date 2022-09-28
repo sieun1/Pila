@@ -60,6 +60,8 @@
             width: 30%;
             font-family: 'Open Sans', sans-serif;
             position: absolute;
+            /* position: relative; */
+         
             height: 0;
             overflow: hidden;
             /* width: auto; */
@@ -143,11 +145,11 @@
 
         }
 
-        hr {
+        /* hr {
 
             width: 100%;
 
-        }
+        } */
 
         /* .section {
             width: 100%;
@@ -220,12 +222,13 @@
         .card-group1 {
             position: relative;
             animation: slide1 3s;
+            animation-delay: 1s;
 
         }
 
         @keyframes slide1 {
             from {
-                left: -450px;
+                left: -350px;
             }
 
             to {
@@ -237,12 +240,13 @@
         .card-group2 {
             position: relative;
             animation: slide2 3s;
+            animation-delay: 1s;
 
         }
 
         @keyframes slide2 {
             from {
-                right: -450px;
+                right: -350px;
             }
 
             to {
@@ -250,56 +254,68 @@
             }
 
         }
-
-        /* .imgSec{
-            position: relative;
-            animation: img_slide 2s;
-            transform: translateX();
-        }
-
-        @keyframes img_slide {
-            0%{left: 0%;}
+        .view-quick {
            
-            25%{left: -100%;}
-           
-            50%{left: -200%;}
-            75%{left: -300%;}
-           
-            
-        } */
-        /* .imgSec_1 {
-            position: relative;
-            animation: slide11 2s;
+            margin-top: 120px;
+            position: fixed;
+            right: 0;
+            top: 0;
+            transition: all .2s;
+        }
+        .view-quick h5{
+            background: #a99d8f;
+    color: #fff;
+    display: block;
+    width: 120px;
+    height: 34px;
+    border: solid 1px #e8e8e8;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 0;
+    line-height: 34px;
+    text-align: center;
+    font-weight: 300;
 
         }
-
-        @keyframes slide11 {
-            from {
-                left: -250px;
-            }
-
-            to {
-                left: 0px;
-            }
+        .view-quick .item-wrap{
+            border: solid 1px #e8e8e8;
+    border-bottom: 0;
+    background: #fff;
 
         }
-
-        .imgSec_2 {
-         position: relative;
-         animation: slide10 2s;
-        }
-
-        @keyframes slide10 {
-            from {
-                right: -250px;
-            }
-
-            to {
-                right: 0px;
-            }
-
-        } */
-
+        .view-quick .item-wrap .items {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px #e8e8e8;
+}
+.view-quick .item-wrap .items img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    border-radius: 100%;
+    margin: 15px 0;
+}
+.view-quick .item-wrap .items .labels {
+    padding: 0 7px;
+    display: inline-block;
+    border: solid 1px #a99d8f;
+    height: 20px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #a99d8f;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.view-quick .item-wrap .items .name {
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    color: #333;
+    margin: 8px 0 15px;
+    cursor: pointer;
+}
     </style>
 
 </head>
@@ -349,34 +365,60 @@
 
             </div>
 
-            <hr /><br />
+            <br/>
 
 
             <div class="section">
+                <div class="view-quick">
+                    <h5>관련 교육과정</h5>
+                    <div class="item-wrap">
+                        <a onclick="location.href='prog_mattPila.html'" class="items">
+                            <img src="https://www.firstyp.co.kr/images/imgs/pilates/visual-mat-level1.jpg" alt>
+                            <span class="labels" >Pillatas</span>
+                            <span class="name">매트 필라테스</span>
+                        </a>
+                        <a onclick="location.href='prog_reformer.html'" class="items">
+                            <img src="https://www.firstyp.co.kr/images/imgs/pilates/v0723-02.jpg" alt>
+                            <span class="labels" >Reformer</span>
+                            <span class="name">리포며 Master</span>
+                        </a>
+                        <a onclick="location.href='prog_jaehwal.html'" class="items">
+                            <img src="https://www.firstyp.co.kr/images/imgs/pilates/visual-heal-level1.jpg" alt>
+                            <span class="labels" >Jaehwal</span>
+                            <span class="name">1:1 재활필라테스</span>
+                        </a>
+                        <a onclick="location.href='prog_cadillac.html'" class="items">
+                            <img src="https://www.firstyp.co.kr/images/imgs/pilates/visual-obj-level3.jpg" alt>
+                            <span class="labels" >Cadillac</span>
+                            <span class="name">캐딜락 Master</span>
+                        </a>
+                    </div>
+                </div>
                 <div class="imgSec" style="margin: auto; width: 1300px;">
                     <div class="imgSec_1" style="display:inline;">
-                        <img src="https://health.chosun.com/site/data/img_dir/2021/11/18/2021111801788_0.jpg" style="width: 610px; height: 460px;  
+                        
+                        <img src="https://health.chosun.com/site/data/img_dir/2021/11/18/2021111801788_0.jpg" style="width: 590px; height: 440px;  
                         border-radius: 15px; 
                         margin: 0px 10px 0px 10px;">
                     </div>
-                    <div class="imgSec_2" style="display:inline;"></div>
+                    <div class="imgSec_1" style="display:inline;"></div>
                     <img src="https://psypilates.itpage.kr/user/p/psypilates/20220610132209_6KHOhmW8.jpg"
-                        style="width: 610px; height: 460px; border-radius: 15px; ">
+                        style="width: 590px; height: 440px; border-radius: 15px; ">
                     </div>
-                </div><br /><br /><br /><br /><br /><br />
+                </div><br /><br /><br /><br /><br />
 
 
                 <div class="pSec">
-                    <p1>"필라테스는 상해를 방지하고 재활에 효과가 있으며, 심폐증력과 순환기 능력을 강화 시키며
-                        마음을 차분히 가라 않히는 과정을 통해 긴장해소와 스트레스 감소에 효과가 있습니다.
+                    <p1>"필라테스는 상해를 방지하고 재활에 효과가 있으며,<br> 심폐증력과 순환기 능력을 강화 시키며
+                        마음을 차분히 <br> 가라  않히는 과정을 통해 긴장해소와 스트레스 감소에<br>  효과가 있습니다.
                     </p1> <br /><br /><br />
 
                     <p2>
-                        필라테스는 자신의 몸을 스스로 조절하고 인지하는 방법을 배우는 능동적인 운동으로 코어 근육을 강화시켜 줍니다."
+                        필라테스는 자신의 몸을 스스로 조절하고 인지하는 방법을 <br> 배우는 능동적인 운동으로 코어 근육을 강화시켜 줍니다."
                     </p2>
                 </div>
             </div>
-            <div class="hr2">
+            <div class="hr2"><br /><br />
                 <hr />
             </div>
 
@@ -475,7 +517,28 @@
                         041-475-1546</p>
                 </div>
             </div>
+            <script>
+                var index = 0;
+                window.onload = function(){
+                    slideShow();
+                }
+
+                function slideShow() {
+                    var i;
+                    var x = document.getElementByClassName("imgSec_1");
+                    for (i=0; i<x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    index++;
+                    if(index > x.length){
+                        index=1;
+                    }
+                    x[index-1].style.display="block";
+                    setTimeout(slideShow,3500);
+                }
+            </script>
 
 </body>
+
 
 </html>
